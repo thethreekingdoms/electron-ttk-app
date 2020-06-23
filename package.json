@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "start2": "./node_modules/.bin/electron.cmd .",
-    "package": "electron-packager . 金财管家 --win --out ./ --arch=x64 --icon=./images/app.ico",
+    "package": "electron-packager . ttk-app --win --out ./ --arch=x64 --icon=./images/app.ico",
     "install": "node-gyp rebuild -target=1.6.11 -arch=x64 -dist-url=https://atom.io/download/atom-shell",
     "build": "electron-builder . --x64 --win",
     "rebuild-ffi": "cd ./node_modules/ffi/ && node-gyp rebuild --target=1.7.11 --arch=x64 --target_arch=x64 --dist-url=https://atom.io/download/electron && cd ../ref && node-gyp rebuild --target=1.7.11 --arch=x64 --target_arch=x64 --dist-url=https://atom.io/download/electron "
